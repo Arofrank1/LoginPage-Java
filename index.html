@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page for Java project</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .login_container{
+            min-height: 100vh;
+    width: 100%;
+    padding: 100;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./backgroundImg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+          
+            
+        }
+      
+        .login_form{
+            height: 50vh;
+            background-color:#f44336;
+            padding: 60px 100px;
+            width: 100px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            margin-left: 65%;
+          box-shadow: 0px 5px 15px rgba(202, 64, 4, 0.25);
+            border-radius: 10px;
+        }
+        form{
+            font-family: 'poppins';
+
+        }
+        h1{
+            color: #fff ;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        span{
+            font-size: 15px;
+            color: #fff;
+        }
+        /* .button{
+display: block;
+        } */
+        a{
+            font-size: 15px;
+            color: rgb(52, 43, 216);
+            text-decoration: none;
+          padding: 0px 9px;
+        }
+        .btn{
+            padding: 10px 30px;
+            outline: none;
+            border: none;
+          
+            border-radius: 2px;
+            font-size: 13px;
+            align-items: center;
+            justify-content: center;
+            display: flex ;
+            margin-left: 40px;
+          transition: 1s ease;
+            background: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            font-weight: 500;
+            
+        }
+        .btn:hover{
+            cursor: pointer;
+            color: #f44336;
+            background: #fff;
+            font-weight: 500;
+            font-size: 13px;
+            
+        }
+
+        .input{
+            outline: none;
+            border-radius: 2px;
+            border:none;
+            padding: 6px 7px;
+            background: #fff;
+            color: #fff;
+            
+        }
+        .input:focus{
+            outline: blue;
+            border: 1px solid  #fff;
+            color: #fff;
+            background: transparent;
+        }
+        label{
+            color: #fff;
+            font-size: 18px;
+        }
+  .login_field{
+    margin-top: 10px;
+  }
+
+    </style>
+</head>
+<body>
+    
+<div class="login_container">
+    <div class="login_form">
+<form action="" method="post" class="login_form1">
+    <h1>Log in</h1>
+
+    <div class="login_field">
+        <label for="username"> User Name:</label>
+        <input type="text" name="username" placeholder="Enter username"
+        id="username" class="input"
+        />
+    </div>
+    <div class="login_field">
+        <label for="email"> Email Id:</label>
+        <input type="email" name="email" placeholder="email id"
+        id="email" class="input"
+        />
+    </div>
+    <div class="login_field">
+        <label for="password"> Password:</label>
+        <input type="password" name="password"  placeholder="password"
+        id="password" class="input"
+        />
+    </div>
+    <div class="button">
+       
+        <a href="#">Forget password</a>
+        <button type="submit" class="btn">Sign in</button>
+        
+    </div>
+    <span>New user</span><a href="#">click here</a>
+</form>
+</div>
+</div>
+
+
+</body>
+</html>
